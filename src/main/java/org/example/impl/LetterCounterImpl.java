@@ -8,6 +8,10 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class LetterCounterImpl implements LetterCounter {
+
+    /**
+     * Считаем символы в строке.
+     */
     @Override
     public synchronized HashMap<Character, Long> countCharsInString(String input) {
         List<Character> listOfChars = input.chars().mapToObj(e -> (char) e).toList();

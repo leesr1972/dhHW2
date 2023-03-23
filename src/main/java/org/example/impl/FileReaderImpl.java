@@ -7,8 +7,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
+/**
+ * Разделяем файл на List строк.
+ */
 public class FileReaderImpl implements FileReader {
     @Override
     public synchronized List<String> readLines(File file) throws FileNotFoundException {
